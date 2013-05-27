@@ -33,3 +33,9 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Private settings
+*.ini
+
+# Data
+weather/weather.json
