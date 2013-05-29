@@ -38,4 +38,4 @@ nosetests.xml
 *.ini
 
 # Data
-weather/weather.json
+weather/index.json

@@ -8,7 +8,7 @@ import pylast
 import sys
 
 config = ConfigParser.RawConfigParser()
-config.read(os.path.join(os.path.dirname(__file__), "love_now_playing_track.ini"))
+config.read(os.path.join(os.path.dirname(__file__), "settings.ini"))
 lastfm_api_key = config.get("last.fm", "api_key")
 lastfm_api_secret = config.get("last.fm", "api_secret")
 lastfm_username = config.get("last.fm", "username")

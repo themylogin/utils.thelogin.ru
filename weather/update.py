@@ -22,7 +22,7 @@ try:
         "romance"           : "Восход: %s, закат: %s" % tuple(ngs.find_all("div", "today-panel__info__main__item")[1].find_all("dt")[0].get_text().encode("utf-8").strip().split(" − "))
     }
 
-    open(os.path.join(os.path.dirname(__file__), "weather.json"), "w").write(simplejson.dumps(weather))
+    open(os.path.join(os.path.dirname(__file__), "index.json"), "w").write(simplejson.dumps(weather))
 except:
     msg = MIMEText("Ошибка обновления погоды: %s\n%s" % (repr(sys.exc_info()[1]), traceback.format_tb(sys.exc_info()[2])[0]))
     msg["Subject"] = "Ошибка обновления погоды"
